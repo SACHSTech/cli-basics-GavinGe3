@@ -1,1 +1,44 @@
-
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main) $ pwd
+/workspaces/cli-basics-GavinGe3
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main) $ mkdir CLIBasicsFolder
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main) $ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main) $ cd CLIBasicsFolder
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main) $ touch myfile.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ echo Gavin Ge ICS4Ub
+Gavin Ge ICS4Ub
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ echo Gavin Ge ICS4Ub >> myfile.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ cat myfile.txt
+Gavin Ge ICS4Ub
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ cp myfile.txt myfile2.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ rm myfile2.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ cp myfile.txt myfile_copy.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ ls
+myfile_copy.txt  myfile.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ mv myfile_copy.txt myfile2.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ mv myfile2.txt ..
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ ls ..
+CLIBasicsFolder  myfile2.txt  README.md  TerminalSession.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3/CLIBasicsFolder (main ✗) $ cd ..
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main ✗) $ rm CLIBasicsFolder/myfile.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main ✗) $ rmdir CLIBasicsFolder
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main ✗) $ ls ..
+cli-basics-GavinGe3
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main ✗) $ ls
+myfile2.txt  README.md  TerminalSession.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main ✗) $ git add -A
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main) $ git commit -m "complete CLI assignment"
+[main 9912101] complete CLI assignment
+ 1 file changed, 1 insertion(+)
+ create mode 100644 myfile2.txt
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main) $ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SACHSTech/cli-basics-GavinGe3
+   b9e184d..9912101  main -> main
+@GavinGe3 ➜ /workspaces/cli-basics-GavinGe3 (main) $ 
